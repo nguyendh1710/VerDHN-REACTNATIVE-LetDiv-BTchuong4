@@ -33,6 +33,6 @@ export const styles = StyleSheet.create({
     zIndex: 1, // Đảm bảo chữ hiển thị trên gradient
     color: "#ffff",
     fontWeight: "700",
-    fontSize: 20,
+    fontSize: 12,
   },
 });

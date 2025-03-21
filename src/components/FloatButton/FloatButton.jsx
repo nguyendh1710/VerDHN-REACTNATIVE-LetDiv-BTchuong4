@@ -7,6 +7,9 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 
 export default function FloatButton({onPress}) {
+  if(onPress){
+    console.log("hê")
+  }
   return (
     <TouchableOpacity onPress={onPress}>
       <View style={styles.container}>
@@ -15,7 +18,7 @@ export default function FloatButton({onPress}) {
                 style={styles.gradient}
             >
         <Text>
-        <Icon name="add" style={styles.icon}size={30} color="#FFFFFF" />
+        <Icon name="add" style={styles.icon} size={40} color="#FFFFFF" />
         </Text>
        
         </LinearGradient>

@@ -18,13 +18,15 @@ export const styles = StyleSheet.create({
  
   title: {
     color: "rgba(73, 80, 87, 1)",
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: "700",
+    textAlign:"center",
+    color:"orange",
   },
   searchContainer: {
    
     marginTop: 18,
-    paddingRight: 95,
+    marginLeft: 25,
     justifyContent: "start",
     fontSize: 18,
     color: "rgba(206, 212, 218, 1)",
@@ -36,17 +38,17 @@ export const styles = StyleSheet.create({
     borderStyle: "solid",
     borderWidth: 1,
     width: 290,
-    paddingHorizontal: 8,
+    paddingHorizontal: 18,
     paddingVertical: 8,
     marginBottom: 19,
-    height: 80,
+    height: 40,
     flexDirection: "row",
     alignItems: "center",
   },
   searchInput: {
-    fontSize: 22,
+    fontSize: 18,
     color: "rgba(73, 80, 87, 1)",
-    paddingTop: 10,
+    paddingTop: 0,
 
   },
   searchIcon: {

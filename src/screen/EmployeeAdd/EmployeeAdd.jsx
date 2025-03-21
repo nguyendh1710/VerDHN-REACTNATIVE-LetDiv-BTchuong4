@@ -40,9 +40,16 @@ export default function EmployeeAdd() {
       role: textEmployeePosition,
       avatarUri: textEmployeeAvatarUri 
     };
-    dispatch(addEmployee(employeeNeedAdded));
- // điều hướng tro lại EmployeeList
-    navigation.goBack()
+    if(employeeNeedAdded.name.trim() !== "" &&
+    employeeNeedAdded.role.trim() !== "" &&
+    employeeNeedAdded.avatarUri?.trim() !== "" ) {
+      dispatch(addEmployee(employeeNeedAdded));
+      // điều hướng tro lại EmployeeList
+         navigation.goBack()
+    }else{
+      alert("Vui lòng điền đầy đủ thông tin")
+    }
+   
 
   };
 

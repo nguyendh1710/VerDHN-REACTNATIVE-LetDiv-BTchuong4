@@ -13,11 +13,12 @@ import { useSelector } from "react-redux";
 export default function EmployeeResignation() {
 // cu phap dang theo doi employees
   const resignList = useSelector(state=>state.employees.resignList);
-  // console.log( resignList)
+
+  // console.log(resignList)
  
     const [filteredDataResign, setFilteredDataResign] = useState(resignList); 
  
-    // chú ý dùng useEffect để nó thay đổi khi component khởi tạo
+    // chú ý dùng useEffect để nó thay đổi khi component khởi tạo thì khi này nó mới ra hiệu cho React re-render component lai bởi vì như nút thông thường thì qua component khác nó se ra lệnh mount component kéo UI re-render còn cái bottom-tab nó không đứng yên chứ không có mount component mới nên phải dùng thêm useEffect
     useEffect(() => {
       setFilteredDataResign(resignList)
      
@@ -62,6 +63,7 @@ export default function EmployeeResignation() {
             data={filteredDataResign}
             renderItem={({ item }) => <EmployeeItem dataItem={item} />}
             keyExtractor={(item) => item.id}
+            contentContainerStyle={{ paddingBottom: 50,marginHorizontal: 20 }} // Tăng khoảng trống cuối danh sách
           />
         </View>
    

@@ -44,7 +44,7 @@ export default function EmployeeUpdate({ route }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}> Sửa nhân viên </Text>
+      <Text style={styles.title}> Cập nhật thông tin nhân viên </Text>
       <Input
         style={styles.inputContainer}
         placeholder="Họ và tên"

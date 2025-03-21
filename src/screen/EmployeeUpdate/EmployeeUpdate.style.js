@@ -10,14 +10,18 @@ export const styles = StyleSheet.create({
     marginTop: 40,
     marginHorizontal: 30,
     // marginVertical:80,
-    backgroundColor:'#ffff',
+    // backgroundColor:'#ffff',
+    gap: 8,
   },
 
   title:{
-     fontSize: 30,
+    textAlign:"justify",
+     fontSize: 24,
      fontWeight: '700',
+     marginHorizontal:-10,
      marginBottom:40,
      justifyContent: 'center',
+     color:"orange"
     //  position:'absolute',
 
   },
@@ -25,6 +29,8 @@ export const styles = StyleSheet.create({
     marginBottom:10,
  },
  buttonPosition:{
-  paddingTop:20,
+  paddingTop:40,
+  
+  marginHorizontal:50,
 },
 });

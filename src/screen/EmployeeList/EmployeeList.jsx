@@ -21,7 +21,7 @@ export default function EmployeeList() {
   const navigation = useNavigation();
    // redux
    const listEmployee = useSelector(state=>state.employees.list);
-  //  console.log( list)
+  //  console.log( listEmployee)
 
   const [filteredData, setFilteredData] = useState(listEmployee); 
   useEffect(() => {
@@ -29,18 +29,18 @@ export default function EmployeeList() {
     
   }, [listEmployee])
   const handleSearch = (query) => {
-      const results = list.filter((item) =>
+      const results = filteredData.filter((item) =>
         //toLowerCase dùng cho string
         item.name.toLowerCase().includes(query.toLowerCase()) || 
         item.role.toLowerCase().includes(query.toLowerCase()) 
       );
-      console.log(results);
+      // console.log(results);
       setFilteredData(results);
   };
 
   // Hàm them nhân viên
   const handleAddEmployee = () => {
-
+     console.log("nhan r")
     // dieu huong de EmployeeAdd
     navigation.navigate("EmployeeAdd");
 
@@ -78,6 +78,7 @@ export default function EmployeeList() {
             data={filteredData}
             renderItem={({ item }) => <EmployeeItem dataItem={item} />}
             keyExtractor={(item) => item.id}
+            contentContainerStyle={{ paddingBottom: 50 }} // Tăng khoảng trống cuối danh sách
           />
         </View>
       

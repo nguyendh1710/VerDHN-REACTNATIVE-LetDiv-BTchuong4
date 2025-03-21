@@ -18,12 +18,14 @@ export const styles = StyleSheet.create({
  
   title: {
     color: "rgba(73, 80, 87, 1)",
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: "700",
+    textAlign:"center",
+      color:"orange",
   },
   searchContainer: {
    
-    marginTop: 18,
+    marginTop: 8,
     paddingRight: 95,
     justifyContent: "start",
     fontSize: 18,
@@ -37,9 +39,9 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     width: 290,
     paddingHorizontal: 8,
-    paddingVertical: 8,
+    paddingVertical: 3,
     marginBottom: 19,
-    height: 80,
+    height: 40,
     flexDirection: "row",
     alignItems: "center",
   },

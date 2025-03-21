@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
    flexDirection:"column",
     marginTop: 18,
     paddingLeft: 21,
-    paddingRight: 21,
+    paddingRight: 31,
     paddingTop: 15,
     paddingBottom: 15,
     alignItems: "stretch",
@@ -64,5 +64,12 @@ export const styles = StyleSheet.create({
     aspectRatio: 1.3,
     alignSelf: "stretch",
   },
+  boxBtn: {
+    
+    flexDirection:"row",
+    justifyContent: "center",
+    alignItems:"center",
+    gap: 4,
+  }
 
 });
